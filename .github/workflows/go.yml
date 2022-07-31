@@ -57,6 +57,7 @@ jobs:
       - determine-go-version
       - setup
     steps:
+      - uses: actions/checkout@v3
       - name: build
         run: |
           make build
@@ -68,6 +69,7 @@ jobs:
       - determine-go-version
       - setup
     steps:
+      - uses: actions/checkout@v3
       - name: test
         run: |
           make test
